@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LoginApplication.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="nameEntry" Placeholder="UserName"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password"/>
+            <Button Text="Log in" BackgroundColor="Tomato"
+                x:Name="LoginButton"
+                Clicked="LoginButton_clicked"/>
+
+            <Button Text="Register" BackgroundColor="Tomato"
+                x:Name="RegisterButton"
+                Clicked="RegisterButton_clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
